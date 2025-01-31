@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Media Page</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>About Me</h1>
+    </header>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="form.html">Application Form</a>
+      <a href="courses.html">Courses</a>
+      <a href="media.html">Media Page</a>
+    </nav>
+
+    <section>
+      <h2>My Introduction</h2>
+      <p>A short paragraph introducing yourself.</p>
+
+      <picture>
+        <source
+          srcset="images/my-image-mobile.jpg"
+          media="(max-width: 600px)"
+        />
+        <source
+          srcset="images/my-image-tablet.jpg"
+          media="(max-width: 1024px)"
+        />
+        <source
+          srcset="images/my-image-laptop.jpg"
+          media="(min-width: 1025px)"
+        />
+        <img src="images/my-image-laptop.jpg" alt="Your Picture" />
+      </picture>
+    </section>
+
+    <section>
+      <h2>My Favorite Music</h2>
+      <audio controls>
+        <source src="audio/my-music.mp3" type="audio/mpeg" />
+        Your browser does not support the audio element.
+      </audio>
+    </section>
+
+    <section>
+      <h2>My Favorite Video</h2>
+      <video controls width="640">
+        <source src="video/my-video.mp4" type="video/mp4" />
+        Your browser does not support the video element.
+      </video>
+    </section>
+
+    <footer>
+      <p>Address: Your Address | &copy; 2023 Your Name</p>
+    </footer>
+  </body>
+</html>
